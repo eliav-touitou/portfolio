@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personality Survey</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">The Great Personality Survey</h1>
+    <p id="description">
+      Welcome to Eliav's special and uniqe personality survey
+    </p>
+    <hr />
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required=""
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required=""
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+      </div>
+      <hr />
+      <div class="form-group">
+        <p>Which option best describes your current state of mind?</p>
+        <select id="dropdown" name="state" class="form-control" required="">
+          <option disabled="" selected="" value="">
+            Select current state of mind
+          </option>
+          <option value="happy">Happy</option>
+          <option value="sad">Sad</option>
+          <option value="nervous">Nervous</option>
+          <option value="crazy">Crazy</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Would you like to change the world ?</p>
+        <label>
+          <input
+            name="World-change"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked=""
+          />Definitely</label
+        >
+        <label>
+          <input
+            name="World-change"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+          />Maybe</label
+        >
+        <label
+          ><input
+            name="World-change"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Not sure</label
+        >
+      </div>
+
+      <div class="form-group">
+        <p>What animal would you like to be?</p>
+        <select id="most-like" name="mostLike" class="form-control" required="">
+          <option disabled="" selected="" value="">Select an option</option>
+          <option value="bear">Bear</option>
+          <option value="bird">Bird</option>
+          <option value="fish">Fish</option>
+          <option value="rakoon">Rakoon</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>
+          What would you like to be in the future?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+
+        <label
+          ><input
+            name="prefer"
+            value="professor"
+            type="checkbox"
+            class="input-checkbox"
+          />Proffesor</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="police"
+            type="checkbox"
+            class="input-checkbox"
+          />Police Officer</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="singer"
+            type="checkbox"
+            class="input-checkbox"
+          />Singer</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="actor"
+            type="checkbox"
+            class="input-checkbox"
+          />Actor</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Dr"
+            type="checkbox"
+            class="input-checkbox"
+          />Doctor</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="lawyer"
+            type="checkbox"
+            class="input-checkbox"
+          />lawyer</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="athlete"
+            type="checkbox"
+            class="input-checkbox"
+          />Athlete</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="teacher"
+            type="checkbox"
+            class="input-checkbox"
+          />Teacher</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="brocker"
+            type="checkbox"
+            class="input-checkbox"
+          />Brocker</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="nurse"
+            type="checkbox"
+            class="input-checkbox"
+          />Nurse</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="veterinar"
+            type="checkbox"
+            class="input-checkbox"
+          />Veterinar</label
+        >
+      </div>
+      <hr />
+      <div class="form-group">
+        <p>Is there anything else you want us to know about you?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+      <hr />
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
